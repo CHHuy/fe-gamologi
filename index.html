@@ -108,7 +108,7 @@
   <link rel="stylesheet" href="customs/style.css">
 </head>
 
-<body>
+<body  class="synthwave-x">
 <div class="app-loading">
   <div class="bouncing-loader">
     <div></div>
@@ -118,23 +118,196 @@
 </div>
 <div class="wrapper" id="site_wrapper">
   <header class="header" id="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark mt-2" style="font-family: eight-bit_madnessregular">
+        <!--      <button class="btn" type="button" data-target="#aside"
+                      aria-controls="aside" aria-expanded="false" aria-label="Toggle navigation" id="sidebarCollapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>-->
+
+        <a class="navbar-brand" href="#"><img src="images/gamologi.png" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                   style="width: 500px;">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-trigger-modal" data-toggle="modal" data-target="#userLogin">
+                <i class="fas fa-sign-in-alt"></i>  Login
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="loginAccount"
+                   aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="loginAccount">User Login</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-trigger-modal" data-toggle="modal" data-target="#userRegister">
+                <i class="fas fa-user-plus"></i> Register
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="userRegister" tabindex="-1" role="dialog" aria-labelledby="registerAccount"
+                   aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="registerAccount">User Register</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      <nav class="navbar nav-box d-lg-flex navbar-light bg-transparent mt-2" style="font-family: retro_gamingregular">
+        <a class="home-btn header-nav" href="/"><i class="fas fa-home"></i></a>
+        <a class="home-btn header-nav" href="/">New Games</a>
+        <a class="home-btn header-nav" href="/">Most Popular</a>
+        <a class="home-btn header-nav" href="/">Best Games</a>
+        <a class="home-btn header-nav" href="/">Played Games</a>
+        <a class="home-btn header-nav" href="/">Favourite Games</a>
+        <a class="home-btn header-nav" href="/">Recommended Games</a>
+        <a class="home-btn header-nav social-icon" target="_blank" href="https://www.facebook.com/Gamologi"><i class="fab fa-facebook-f"></i></a>
+        <a class="home-btn header-nav social-icon" target="_blank" href="https://www.youtube.com/channel/UCXlph25Ns0d92IQppwGg1nQ"><i class="fab fa-youtube"></i></a>
+      </nav>
+      <div class="slick_categories d-none d-sm-flex">
+        <div class="js-slick-responsive mr-5">
+          <div class="slider-item"><a href="#">Action & Adventure</a></div>
+          <div class="slider-item"><a href="#">For Girls</a></div>
+          <div class="slider-item"><a href="#">Strategy</a></div>
+          <div class="slider-item"><a href="#">Simulator</a></div>
+          <div class="slider-item"><a href="#">Management</a></div>
+          <div class="slider-item"><a href="#">Skill</a></div>
+          <div class="slider-item"><a href="#">RPG</a></div>
+          <div class="slider-item"><a href="#">Shooting</a></div>
+          <div class="slider-item"><a href="#">Fighting</a></div>
+          <div class="slider-item"><a href="#">Racing & Driving</a></div>
+          <div class="slider-item"><a href="#">Sports</a></div>
+          <div class="slider-item"><a href="#">Arcade & Retro</a></div>
+          <div class="slider-item"><a href="#">Metroidvania</a></div>
+          <div class="slider-item"><a href="#">Fun & Dumb</a></div>
+        </div>
+        <div class="show_all">
+          <a href="#" class="btn-show">All Categories</a>
+        </div>
+      </div>
+      <div class="slick_tags d-none d-sm-flex">
+        <div class="js-slick-responsive mr-5">
+          <div class="slider-item rounded-pill"><a href="#">.io Games</a></div>
+          <div class="slider-item"><a href="#">1 player</a></div>
+          <div class="slider-item"><a href="#">2 player</a></div>
+          <div class="slider-item"><a href="#">3+ Player</a></div>
+          <div class="slider-item"><a href="#">3D</a></div>
+          <div class="slider-item"><a href="#">Action</a></div>
+          <div class="slider-item"><a href="#">Addition</a></div>
+          <div class="slider-item"><a href="#">Adrenaline</a></div>
+          <div class="slider-item"><a href="#">Adventure</a></div>
+          <div class="slider-item"><a href="#">Advergames</a></div>
+          <div class="slider-item"><a href="#">Aircraft</a></div>
+          <div class="slider-item"><a href="#">Alien</a></div>
+          <div class="slider-item"><a href="#">American Football</a></div>
+          <div class="slider-item"><a href="#">Ancient Themed</a></div>
+          <div class="slider-item"><a href="#">Android</a></div>
+          <div class="slider-item"><a href="#">Animal</a></div>
+          <div class="slider-item"><a href="#">Ant</a></div>
+          <div class="slider-item"><a href="#">Arcade</a></div>
+          <div class="slider-item"><a href="#">Arkanoid</a></div>
+          <div class="slider-item"><a href="#">Armor Games</a></div>
+          <div class="slider-item"><a href="#">Army</a></div>
+          <div class="slider-item"><a href="#">Asteroid</a></div>
+          <div class="slider-item"><a href="#">Baby</a></div>
+          <div class="slider-item"><a href="#">Baby Hazel</a></div>
+          <div class="slider-item"><a href="#">Balancing</a></div>
+          <div class="slider-item"><a href="#">Ball</a></div>
+          <div class="slider-item"><a href="#">Balloons</a></div>
+          <div class="slider-item"><a href="#">Banana</a></div>
+          <div class="slider-item"><a href="#">Baseball</a></div>
+          <div class="slider-item"><a href="#">Basketball</a></div>
+        </div>
+        <div class="show_all">
+          <a href="#" class="btn-show">All Tags</a>
+        </div>
+      </div>
+    </div>
   </header>
-  <main class="main" id="main">
-    <h1>Hello world!</h1>
-  </main>
+  <!--  <div class="d-inline-flex">
+
+      <aside class="aside " id="aside">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="sidebar">
+          <ul class="list-unstyled components">
+            <li><a href="/">a</a></li>
+            <li><a href="/">b</a></li>
+            <li><a href="/">c</a></li>
+            <li><a href="/">d</a></li>
+            <li><a href="/">e</a></li>
+            <li><a href="/">f</a></li>
+            <li><a href="/">g</a></li>
+          </ul>
+
+        </nav>
+      </aside>
+      <main class="main">
+        Một con vịt nè
+      </main>
+    </div>-->
   <footer class="footer" id="footer">
   </footer>
 </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 <!-- Core JavaScript -->
-<!--<script src="dist/core.min.js"></script>-->
-<script src="third_party/modernizr.min.js"></script>
+<script src="dist/core.min.js"></script>
+<!--<script src="third_party/modernizr.min.js"></script>-->
+<!--<script src="third_party/slick/slick/slick.min.js"></script>-->
 <!-- End Core JavaScript -->
 
 <!-- JavaScript -->

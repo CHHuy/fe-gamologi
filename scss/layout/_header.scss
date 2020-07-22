@@ -1,3 +1,161 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+.header {
+  .navbar {
+    box-shadow: none;
+
+    .navbar-brand {
+      width: 30%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .btn-trigger-modal {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      &:hover {
+        color: red;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .nav-box {
+    @include justify-content(flex-start);
+    padding: 0 0;
+
+    .header-nav {
+      margin-right: 10px;
+      border: 1px solid white;
+      background-color: rgb(52, 58, 64);
+      color: #ffffff;
+      padding: 10px 10px;
+      font-size: 17px;
+      font-weight: bold;
+
+      .fa-facebook-f {
+        color: #6697FF;
+      }
+      .fa-youtube {
+        color: red;
+      }
+
+      &:hover {
+        color: red;
+        text-decoration: none;
+      }
+    }
+
+    .social-icon {
+      padding: 10px 15px;
+      &:hover {
+        background-color: #343a40 ;
+        .fa-facebook-f {
+          color: #ffffff;
+        }
+        .fa-youtube{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.slick_categories {
+  margin: 10px 0 10px 22px;
+  @include flexbox();
+}
+
+.slick_tags {
+  margin: 20px 0 10px 22px;
+  @include flexbox();
+}
+
+.js-slick-responsive {
+  @include media-breakpoint-down(lg) {
+    width: 80%;
+  }
+  @include media-breakpoint-down(md) {
+    width: 75%;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 75%;
+  }
+  padding: 0 10px;
+  width: 85%;
+  height: 100%;
+
+  .slick-track {
+    text-align: center;
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  .slick-slide {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    height: 60px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 5px 20px;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        color: red;
+        text-decoration: none;
+      }
+    }
+  }
+.slick-arrow{
+  width: 30px;
+  height: 30px;
+}
+  .slick-prev:before, .slick-next:before {
+    color: red !important;
+    font-size: 30px;
+  }
+}
+
+.show_all {
+  @include flexbox();
+  @include align-items(center);
+
+  .btn-show {
+    background-color: #343a40;
+    border-radius: 16px;
+    padding: 1px 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
+

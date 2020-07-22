@@ -33,7 +33,9 @@ const paths = {
   },
   scriptsCore: {
     src: [
-      'third_party/modernizr.min.js'
+      'third_party/modernizr.min.js',
+      'third_party/slick/slick/slick.js',
+      'third_party/slick/slick/slick.min.js'
     ],
     dest: 'dist/'
   },
