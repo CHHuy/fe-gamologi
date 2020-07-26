@@ -1,3 +1,70 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+.header {
+  background-color: #000000;
+  .container {
+    min-height: 80px;
+    .navbar {
+      background-color: #000000;
+      padding: 1rem 0;
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 187px;
+    }
+  }
+
+  .input-group {
+    align-items: center;
+    input {
+      color: #ffffff;
+      height: 45px;
+      background-color: #1c1c1c;
+      border-color: #000000;
+      &::placeholder {
+        color: #ffffff;
+        font-size: 20px;
+      }
+    }
+    width: 230px;
+    height: 45px;
+    .btn-search {
+      background-color: #1c1c1c;
+      color: #ffffff;
+      height: 43px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 30px;
+      &.dropdown {
+        .nav-link {
+          color: #ffffff;
+          font-size: 20px;
+        }
+        .dropdown-menu {
+          &.show {
+            background-color: #1c1c1c;
+            .dropdown-item {
+              color: #ffffff;
+              &:hover {
+                background-color: #ffffff;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-login {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-size: 20px;
+  }
+}

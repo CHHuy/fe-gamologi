@@ -50,6 +50,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(../fonts/fontawesome/css/all.min.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9774,7 +9775,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-sm > .col,
-.row-sm > [class*="col-"] {
+.row-sm > [class*='col-'] {
   padding-right: 3px;
   padding-left: 3px;
   margin-bottom: 6px;
@@ -9786,7 +9787,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-md > .col,
-.row-md > [class*="col-"] {
+.row-md > [class*='col-'] {
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 10px;
@@ -10357,6 +10358,75 @@ a.text-dark:hover, a.text-dark:focus {
 /* ==========================================================================
 Header
 ========================================================================== */
+.header {
+  background-color: #000000;
+}
+
+.header .container {
+  min-height: 80px;
+}
+
+.header .container .navbar {
+  background-color: #000000;
+  padding: 1rem 0;
+}
+
+.header .navbar-brand img {
+  width: 187px;
+}
+
+.header .input-group {
+  align-items: center;
+  width: 230px;
+  height: 45px;
+}
+
+.header .input-group input {
+  color: #ffffff;
+  height: 45px;
+  background-color: #1c1c1c;
+  border-color: #000000;
+}
+
+.header .input-group input::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.header .input-group .btn-search {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  height: 43px;
+}
+
+.header .navbar-nav .nav-item {
+  margin: 0 30px;
+}
+
+.header .navbar-nav .nav-item.dropdown .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu.show {
+  background-color: #1c1c1c;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu.show .dropdown-item {
+  color: #ffffff;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu.show .dropdown-item:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header .btn-login {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-size: 20px;
+}
+
 /* ==========================================================================
 Content
 ========================================================================== */
@@ -10367,5 +10437,68 @@ Content
 /* ==========================================================================
 Footer
 ========================================================================== */
+.footer {
+  background-color: #000000;
+}
+
+.footer .container {
+  min-height: 200px;
+}
+
+.footer .container .row {
+  padding: 2.5rem 0;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .footer .container .row .footer-item {
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+.footer .container .row .footerInfo {
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  padding: 0 40px;
+}
+
+@media (max-width: 991.98px) {
+  .footer .container .row .footerInfo {
+    border-right: 0;
+    border-left: 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 0;
+  }
+}
+
+.footer .container .row .socialIcon a {
+  margin: 0 10px;
+}
+
+.footer .container .row .socialIcon a i {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.footer img {
+  width: 117px;
+}
+
+.footer span {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer p a {
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=style.css.map */
