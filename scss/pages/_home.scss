@@ -1,0 +1,305 @@
+.section-menu {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+.list-categories {
+  @include flexbox();
+  list-style: none;
+  justify-content: space-between;
+  padding: 0 5px;
+  @include flex-wrap(wrap);
+
+  li {
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+
+    a {
+      font-family: Roboto;
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      min-width: 88px;
+      min-height: 40px;
+      padding: 5px 15px;
+      line-height: initial;
+
+      .category-name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .category-number {
+        font-weight: 700;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.list-genres {
+  @include flexbox();
+  list-style: none;
+  justify-content: start;
+  padding: 0 0;
+  @include flex-wrap(wrap);
+
+  li {
+    margin: 15px 5px 5px 5px;
+    text-align: center;
+    border-radius: 8px;
+
+    a {
+      font-family: Roboto;
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      min-width: 88px;
+      min-height: 40px;
+      padding: 5px 17px;
+      line-height: initial;
+
+      .genres-name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .genres-number {
+        font-weight: 700;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .li-actionAdventure {
+    background-color: #FF5887;
+  }
+
+  .li-forGirls {
+    background-color: #FF5887;
+  }
+
+  .li-strategy {
+    background-color: #FF8458;
+  }
+
+  .li-simulator {
+    background-color: #37CB00;
+  }
+
+  .li-management {
+    background-color: #00C1D7;
+  }
+
+  .li-skill {
+    background-color: #D48553;
+  }
+
+  .li-RPG {
+    background-color: #D48553;
+  }
+
+  .li-shooting {
+    background-color: #D48553;
+  }
+
+  .li-fighting {
+    background-color: #D48553;
+  }
+
+  .li-racingDriving {
+    background-color: #D48553;
+  }
+
+  .li-sports {
+    background-color: #D48553;
+  }
+
+  .li-arcadeRetro {
+    background-color: #D48553;
+  }
+
+  .li-metroidvania {
+    background-color: #D48553;
+  }
+
+  .li-funDumb {
+    background-color: #D48553;
+  }
+}
+.list-tags {
+  @include flexbox();
+  list-style: none;
+  justify-content: start;
+  padding: 0 0;
+  margin-top: 10px;
+  @include flex-wrap(wrap);
+
+  li {
+    margin: 5px 5px 20px 5px;
+    text-align: center;
+    border-radius: 8px;
+
+    a {
+      font-family: Roboto;
+      text-decoration: none;
+      display: block;
+      min-width: 88px;
+      min-height: 40px;
+      padding: 5px 14px;
+      line-height: initial;
+
+      .tag-name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .tag-number {
+        font-weight: 700;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .li-ioGames {
+    background-color: transparent;
+    border: 1px solid #D8D8D8;
+
+    a {
+      color: #8D8D8D;
+    }
+  }
+
+  .li-1Player {
+    background-color: transparent;
+    border: 1px solid #5ABFB9;
+
+    a {
+      color: #5ABFB9;
+    }
+  }
+
+  .li-2Player {
+    background-color: transparent;
+    border: 1px solid #BF5AA3;
+
+    a {
+      color: #BF5AA3;
+    }
+  }
+
+  .li-3Player {
+    background-color: transparent;
+    border: 1px solid #BF7A5A;
+
+    a {
+      color: #BF7A5A;
+    }
+  }
+
+  .li-3D {
+    background-color: transparent;
+    border: 1px solid #5A63BF;
+
+    a {
+      color: #5A63BF;
+    }
+  }
+
+  .li-Action {
+    background-color: transparent;
+    border: 1px solid #5ABFB9;
+
+    a {
+      color: #5ABFB9;
+    }
+  }
+
+  .li-Addition {
+    background-color: transparent;
+    border: 1px solid #FF8458;
+
+    a {
+      color: #FF8458;
+    }
+  }
+
+  .li-Adrenaline {
+    background-color: transparent;
+    border: 1px solid #58D1FF;
+
+    a {
+      color: #58D1FF;
+    }
+  }
+
+  .li-Adventure {
+    background-color: transparent;
+    border: 1px solid #AE67FF;
+
+    a {
+      color: #AE67FF;
+    }
+  }
+}
+.li-all {
+  vertical-align: center;
+  vertical-align: middle;
+  .btn-all {
+    font-size: 14px;
+    font-family: Roboto;
+    min-height: 48px;
+    font-weight: bold;
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  a.btn-all{
+    width: 80px;
+    padding: 14px 0;
+    }
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.section-games{
+  h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .games-header{
+    font-family: 'pixellarimedium';
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(baseline);
+    .games-sort{
+      width: 30%;
+      @include inline-flex();
+      @include align-items(baseline);
+      @include justify-content(flex-end);
+      h4{
+        font-size: 14px;
+      }
+      select{
+        background-color: transparent;
+        font-size: 12px;
+        margin-left: 10px;
+        width: 50%;
+        border-radius: 8px;
+      }
+    }
+  }
+}

@@ -4,3 +4,13 @@ Content
 .app-loading {
   display: none;
 }
+@font-face {
+  font-family: 'pixellarimedium';
+  src: url('../../fonts/pixellari-webfont.woff2') format('woff2'),
+  url('../../fonts/pixellari-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper{
+  background-color: #F1F1F1;
+}

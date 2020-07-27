@@ -2,12 +2,18 @@
 Header
 ========================================================================== */
 .header {
+  font-family: 'pixellarimedium';
   background-color: #000000;
+
   .container {
     min-height: 80px;
+
     .navbar {
       background-color: #000000;
       padding: 1rem 0;
+      .navbar-toggler{
+        background-color: #ffffff;
+      }
     }
   }
 
@@ -19,18 +25,21 @@ Header
 
   .input-group {
     align-items: center;
+    width: 230px;
+    height: 45px;
+
     input {
       color: #ffffff;
       height: 45px;
       background-color: #1c1c1c;
       border-color: #000000;
+      font-size: 20px;
+
       &::placeholder {
         color: #ffffff;
         font-size: 20px;
       }
     }
-    width: 230px;
-    height: 45px;
     .btn-search {
       background-color: #1c1c1c;
       color: #ffffff;
@@ -40,25 +49,29 @@ Header
 
   .navbar-nav {
     .nav-item {
-      margin: 0 30px;
-      &.dropdown {
-        .nav-link {
-          color: #ffffff;
-          font-size: 20px;
-        }
-        .dropdown-menu {
-          &.show {
-            background-color: #1c1c1c;
-            .dropdown-item {
-              color: #ffffff;
-              &:hover {
-                background-color: #ffffff;
-                color: #000000;
-              }
+      margin: 0 15px;
+
+      .nav-link {
+        color: #ffffff;
+        font-size: 20px;
+        padding: 0 0;
+      }
+
+      .dropdown-menu {
+        &.show {
+          background-color: #1c1c1c;
+
+          .dropdown-item {
+            color: #ffffff;
+
+            &:hover {
+              background-color: #ffffff;
+              color: #000000;
             }
           }
         }
       }
+
     }
   }
 

@@ -6,6 +6,8 @@ Footer
   .container {
     min-height: 200px;
     .row{
+      padding: 2.5rem 0;
+      @include align-items(center);
       .footer-item{
         @include media-breakpoint-down(md){
           text-align: center;
@@ -13,8 +15,6 @@ Footer
         }
       }
 
-      padding: 2.5rem 0;
-      align-items: center;
       .footerInfo{
         border-right: 1px solid #ffffff;
         border-left: 1px solid #ffffff;

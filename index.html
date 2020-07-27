@@ -106,6 +106,12 @@
   </noscript>-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="customs/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -119,8 +125,8 @@
 <div class="wrapper" id="site_wrapper">
   <header class="header" id="header">
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"><img src="images/logo-g.png"> </a>
+      <nav class="navbar navbar-light navbar-expand-lg">
+        <a class="navbar-brand" href="/"><img src="images/logo-g.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -137,6 +143,18 @@
           </div>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="CategoriesDropdown" role="button" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="CategoriesDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="GenresDropdown" role="button" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
                 Genres
@@ -148,17 +166,10 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="CategoriesDropdown" role="button" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">
-                Categories
+            <li class="nav-item">
+              <a href="#" class="nav-link" title="Tags">
+                Tags
               </a>
-              <div class="dropdown-menu" aria-labelledby="CategoriesDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
             </li>
           </ul>
         </div>
@@ -171,7 +182,509 @@
     </div>
   </header>
   <main class="main" id="main">
-    <h1>Hello world!</h1>
+    <div class="container">
+      <div class="section section-menu">
+        <!--<div class="top-categories">
+          <ul class="list-categories">
+            <li class="li-new">
+              <a class="newGames" title="newGames" href="#">
+                <span class="category-name">New Games</span><br>
+                <span class="category-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-popular">
+              <a class="mostPopular" title="popular" href="#">
+                <span class="category-name">Most Popular</span><br>
+                <span class="category-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-best">
+              <a class="bestGames" title="bestGames" href="#">
+                <span class="category-name">Best Games</span><br>
+                <span class="category-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-played">
+              <a class="playedGames" title="playedGames" href="#">
+                <span class="category-name">Played Games</span><br>
+                <span class="category-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-favourite">
+              <a class="favouriteGames" title="favouriteGames" href="#">
+                <span class="category-name">Favourite Games</span><br>
+                <span class="category-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-recommended">
+              <a class="recommendedGames" title="recommendedGames" href="#">
+                <span class="category-name">Recommended Games</span><br>
+                <span class="category-number">100.000 games</span>
+              </a>
+            </li>
+          </ul>
+        </div>-->
+        <div class="top-genres">
+          <ul class="list-genres">
+            <li class="li-actionAdventure">
+              <a class="actionAdventure" title="Action & Adventure" href="#">
+                <span class="genres-name">Action & Adventure</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-forGirls">
+              <a class="forGirls" title="forGirls" href="#">
+                <span class="genres-name">For Girls</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-strategy">
+              <a class="strategy" title="strategy" href="#">
+                <span class="genres-name">Strategy</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-simulator">
+              <a class="simulator" title="simulator" href="#">
+                <span class="genres-name">Simulator</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-management">
+              <a class="Management" title="Management" href="#">
+                <span class="genres-name">Management</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-skill">
+              <a class="skill" title="skill" href="#">
+                <span class="genres-name">Skill</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-RPG">
+              <a class="RPG" title="RPG" href="#">
+                <span class="genres-name">RPG</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-shooting">
+              <a class="shooting" title="shooting" href="#">
+                <span class="genres-name">Shooting</span><br>
+                <span class="genres-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-all">
+              <button class="btn btn-all" type="button" data-toggle="collapse" data-target="#collapseGenres"
+                      aria-expanded="false" aria-controls="collapseGenres">
+                All Genres
+              </button>
+            </li>
+          </ul>
+          <div class="collapse" id="collapseGenres">
+            <ul class="list-genres">
+              <li class="li-fighting">
+                <a class="Fighting" title="Fighting" href="#">
+                  <span class="genres-name">Fighting</span><br>
+                  <span class="genres-number">100.000 games</span>
+                </a>
+              </li>
+              <li class="li-racingDriving">
+                <a class="racingDriving" title="Racing & Driving" href="#">
+                  <span class="genres-name">Racing & Driving</span><br>
+                  <span class="genres-number">100.000 games</span>
+                </a>
+              </li>
+              <li class="li-sports">
+                <a class="sports" title="Sports" href="#">
+                  <span class="genres-name">Sports</span><br>
+                  <span class="genres-number">100.000 games</span>
+                </a>
+              </li>
+              <li class="li-arcadeRetro">
+                <a class="arcadeRetro" title="Arcade & Retro" href="#">
+                  <span class="genres-name">Arcade & Retro</span><br>
+                  <span class="genres-number">100.000 games</span>
+                </a>
+              </li>
+              <li class="li-metroidvania">
+                <a class="metroidvania" title="Metroidvania" href="#">
+                  <span class="genres-name">Metroidvania</span><br>
+                  <span class="genres-number">100.000 games</span>
+                </a>
+              </li>
+              <li class="li-funDumb">
+                <a class="funDumb" title="Fun & Dumb" href="#">
+                  <span class="genres-name">Fun & Dumb</span><br>
+                  <span class="genres-number">100.000 games</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-tags">
+          <ul class="list-tags">
+            <li class="li-ioGames">
+              <a class="ioGames" title=".io Games" href="#">
+                <span class="tag-name">.io Games</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-1Player">
+              <a class="1Player" title="1 player" href="#">
+                <span class="tag-name">1 Player</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-2Player">
+              <a class="2Player" title="2 player" href="#">
+                <span class="tag-name">2 Player</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-3Player">
+              <a class="3Player" title="3+ Player" href="#">
+                <span class="tag-name">3+ Player</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-3D">
+              <a class="3D" title="3D" href="#">
+                <span class="tag-name">3D</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-Action">
+              <a class="Action" title="Action" href="#">
+                <span class="tag-name">Action</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-Addition">
+              <a class="Addition" title="Addition" href="#">
+                <span class="tag-name">Addition</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-Adrenaline">
+              <a class="Adrenaline" title="Adrenaline" href="#">
+                <span class="tag-name">Adrenaline</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-Adventure">
+              <a class="Adventure" title="Adventure" href="#">
+                <span class="tag-name">Adventure</span><br>
+                <span class="tag-number">100.000 games</span>
+              </a>
+            </li>
+            <li class="li-all">
+              <a href="#" class="btn btn-all">
+                All Tags
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-games">
+        <div class="games-header">
+          <h3>Free Games 75,086 games</h3>
+          <div class="games-sort">
+            <h4>Sorted by</h4>
+            <select class="custom-select select-sort">
+              <option selected>New games</option>
+              <option value="1">Most popular</option>
+              <option value="2">Best games</option>
+              <option value="3">Played games</option>
+              <option value="4">Favourite games</option>
+              <option value="5">Recommended games</option>
+            </select>
+          </div>
+        </div>
+        <div class="list-games">
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/webgl.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card game-item">
+            <a href="#">
+              <img class="card-img-top" src="images/game1.gif" alt="game1">
+              <div class="card-body">
+                <h5 class="card-title">Join & Clash</h5>
+                <img class="card-source" src="images/html5.png" alt="">
+                <div class="card-infos">
+                  <span class="percentRating">90%</span>
+                  <span class="playCount">600.000</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
   </main>
   <footer class="footer" id="footer">
     <div class="container">
@@ -182,7 +695,7 @@
         <div class="footerInfo footer-item col-12 col-lg-7">
           <span>© Gamologi.com - MOLI VIETNAM JOINT STOCK COMPANY</span>
           <p class="mt-2">Address: 45/14B Tran Thai Tong Street, Ward 15, Tan Binh District, HCM City, VN 736923 <br>
-            Email: <a  href="mailto:contact@gamologi.com">contact@gamologi.com</a></p>
+            Email: <a href="mailto:contact@gamologi.com">contact@gamologi.com</a></p>
         </div>
         <div class="socialIcon footer-item col-12 col-lg-3">
           <a href="#"><i class="fab fa-instagram"></i></a>
