@@ -8,4 +8,15 @@
 
 }
 */
+.back-to-top {
+  background-color: $primary;
+  @include media-breakpoint-down(sm) {
+    font-size: 10px;
+    z-index: $zindex-modal-backdrop - 1;
+  }
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
 

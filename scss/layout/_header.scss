@@ -17,15 +17,20 @@ Header
     .btn-trigger-modal {
       color: white;
       font-size: 16px;
-      font-weight: bold;
+
       &:hover {
-        color: red;
+        color: #000000;
+        background-color: #ffffff;
       }
 
       &:focus {
         box-shadow: none;
       }
     }
+  }
+
+  .nav-head {
+    border: 1px solid #ffffff;
   }
 
   .nav-box {
@@ -35,7 +40,7 @@ Header
     .header-nav {
       margin-right: 10px;
       border: 1px solid white;
-      background-color: rgb(52, 58, 64);
+      background-color: transparent;
       color: #ffffff;
       padding: 10px 10px;
       font-size: 17px;
@@ -44,24 +49,30 @@ Header
       .fa-facebook-f {
         color: #6697FF;
       }
+
       .fa-youtube {
         color: red;
       }
 
       &:hover {
-        color: red;
+        color: #E1217B;
+        text-decoration: none;
+        border-color: #E1217B;
         text-decoration: none;
       }
     }
 
     .social-icon {
       padding: 10px 15px;
+
       &:hover {
-        background-color: #343a40 ;
+        background-color: #343a40;
+
         .fa-facebook-f {
           color: #ffffff;
         }
-        .fa-youtube{
+
+        .fa-youtube {
           color: #ffffff;
         }
       }
@@ -112,7 +123,8 @@ Header
     a {
       font-size: 14px;
       font-weight: bold;
-      background-color: #343a40;
+      border: 1px solid;
+      background-color: transparent;
       color: #ffffff;
       padding: 5px 20px;
 
@@ -121,19 +133,31 @@ Header
       }
 
       &:hover {
-        color: red;
+        color: #00ffff;
+        border-color: #00ffff;
         text-decoration: none;
       }
     }
   }
-.slick-arrow{
-  width: 30px;
-  height: 30px;
-}
-  .slick-prev:before, .slick-next:before {
-    color: red !important;
-    font-size: 30px;
+
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
   }
+
+  .slick-prev:before, .slick-next:before {
+    color: #ffffff !important;
+    font-size: 30px;
+    font-family: retro_gamingregular;
+  }
+}
+
+.slick-prev:before {
+  content: '<';
+}
+
+.slick-next:before {
+  content: '>';
 }
 
 .show_all {

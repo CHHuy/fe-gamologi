@@ -10377,15 +10377,19 @@ Header
 .header .navbar .btn-trigger-modal {
   color: white;
   font-size: 16px;
-  font-weight: bold;
 }
 
 .header .navbar .btn-trigger-modal:hover {
-  color: red;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .header .navbar .btn-trigger-modal:focus {
   box-shadow: none;
+}
+
+.header .nav-head {
+  border: 1px solid #ffffff;
 }
 
 .header .nav-box {
@@ -10400,7 +10404,7 @@ Header
 .header .nav-box .header-nav {
   margin-right: 10px;
   border: 1px solid white;
-  background-color: #343a40;
+  background-color: transparent;
   color: #ffffff;
   padding: 10px 10px;
   font-size: 17px;
@@ -10416,7 +10420,9 @@ Header
 }
 
 .header .nav-box .header-nav:hover {
-  color: red;
+  color: #E1217B;
+  text-decoration: none;
+  border-color: #E1217B;
   text-decoration: none;
 }
 
@@ -10518,7 +10524,8 @@ Header
 .js-slick-responsive .slick-slide a {
   font-size: 14px;
   font-weight: bold;
-  background-color: #343a40;
+  border: 1px solid;
+  background-color: transparent;
   color: #ffffff;
   padding: 5px 20px;
 }
@@ -10528,7 +10535,8 @@ Header
 }
 
 .js-slick-responsive .slick-slide a:hover {
-  color: red;
+  color: #00ffff;
+  border-color: #00ffff;
   text-decoration: none;
 }
 
@@ -10538,8 +10546,17 @@ Header
 }
 
 .js-slick-responsive .slick-prev:before, .js-slick-responsive .slick-next:before {
-  color: red !important;
+  color: #ffffff !important;
   font-size: 30px;
+  font-family: retro_gamingregular;
+}
+
+.slick-prev:before {
+  content: '<';
+}
+
+.slick-next:before {
+  content: '>';
 }
 
 .show_all {
@@ -10593,5 +10610,19 @@ Footer
 
 }
 */
+.back-to-top {
+  background-color: #007bff;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .back-to-top {
+    font-size: 10px;
+    z-index: 1039;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

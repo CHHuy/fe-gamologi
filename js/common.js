@@ -57,14 +57,6 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       $('#sidebar').toggleClass('active')
     })
   }
-  function synthwave() {
-
-    $('.content-cont').find('h1').append('<div class="shine one"></div><div class="shine two"></div><div class="shine three"></div><div class="shine four"></div><div class="shine five"></div>');
-
-    $('.text-body').find('span').attr('text', $('.text-body').find('span').text());
-    $('.text-body').find('span').text('');
-
-  }
 
   function slickCarousel() {
     $('.js-slick-responsive').slick({
@@ -109,13 +101,28 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       ]
     })
   }
-
+  function scrollToTop() {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $('#back-to-top').fadeIn()
+      } else {
+        $('#back-to-top').fadeOut()
+      }
+    })
+    // scroll body to 0px on click
+    $('#back-to-top').click(function() {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400)
+      return false
+    })
+  }
   function init() {
     scrollToAnchor()
     getBarwidth()
     sideCollapse()
-    synthwave()
     slickCarousel()
+    scrollToTop();
   }
 
   $(document).ready(function() {
