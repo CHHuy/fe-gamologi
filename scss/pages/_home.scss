@@ -17,7 +17,12 @@
 
   li {
     background-color: #663dff;
-    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    background-image: linear-gradient(
+      319deg,
+      #663dff 0%,
+      #aa00ff 37%,
+      #cc4499 100%
+    );
     margin: 20px 0;
     text-align: center;
     border-radius: 8px;
@@ -80,72 +85,72 @@
   }
 
   .li-actionAdventure {
-    background-color: #FF5887;
+    background-color: #ffd758;
   }
 
   .li-forGirls {
-    background-color: #FF5887;
+    background-color: #ff5887;
   }
 
   .li-strategy {
-    background-color: #FF8458;
+    background-color: #ff8458;
   }
 
   .li-simulator {
-    background-color: #37CB00;
+    background-color: #00c1d7;
   }
 
   .li-management {
-    background-color: #00C1D7;
+    background-color: #37cb00;
   }
 
   .li-skill {
-    background-color: #D48553;
+    background-color: #d48553;
   }
 
   .li-RPG {
-    background-color: #D48553;
+    background-color: #2e00d7;
   }
 
   .li-shooting {
-    background-color: #D48553;
+    background-color: #ad58ff;
   }
 
   .li-fighting {
-    background-color: #D48553;
+    background-color: #d20000;
   }
 
   .li-racingDriving {
-    background-color: #D48553;
+    background-color: #b3ff58;
   }
 
   .li-sports {
-    background-color: #D48553;
+    background-color: #c4c4c4c4;
   }
 
   .li-arcadeRetro {
-    background-color: #D48553;
+    background-color: #181818;
   }
 
   .li-metroidvania {
-    background-color: #D48553;
+    background-color: #ffd758;
   }
 
   .li-funDumb {
-    background-color: #D48553;
+    background-color: #00c1d7;
   }
 }
+
 .list-tags {
   @include flexbox();
   list-style: none;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0 0;
   margin-top: 10px;
   @include flex-wrap(wrap);
 
   li {
     margin: 5px 5px 20px 5px;
-    text-align: center;
     border-radius: 8px;
 
     a {
@@ -171,135 +176,194 @@
 
   .li-ioGames {
     background-color: transparent;
-    border: 1px solid #D8D8D8;
+    border: 1px solid #d8d8d8;
 
     a {
-      color: #8D8D8D;
+      color: #8d8d8d;
     }
   }
 
   .li-1Player {
     background-color: transparent;
-    border: 1px solid #5ABFB9;
+    border: 1px solid #5abfb9;
 
     a {
-      color: #5ABFB9;
+      color: #5abfb9;
     }
   }
 
   .li-2Player {
     background-color: transparent;
-    border: 1px solid #BF5AA3;
+    border: 1px solid #bf5aa3;
 
     a {
-      color: #BF5AA3;
+      color: #bf5aa3;
     }
   }
 
   .li-3Player {
     background-color: transparent;
-    border: 1px solid #BF7A5A;
+    border: 1px solid #bf7a5a;
 
     a {
-      color: #BF7A5A;
+      color: #bf7a5a;
     }
   }
 
   .li-3D {
     background-color: transparent;
-    border: 1px solid #5A63BF;
+    border: 1px solid #5a63bf;
 
     a {
-      color: #5A63BF;
+      color: #5a63bf;
     }
   }
 
   .li-Action {
     background-color: transparent;
-    border: 1px solid #5ABFB9;
+    border: 1px solid #5abfb9;
 
     a {
-      color: #5ABFB9;
+      color: #5abfb9;
     }
   }
 
   .li-Addition {
     background-color: transparent;
-    border: 1px solid #FF8458;
+    border: 1px solid #ff8458;
 
     a {
-      color: #FF8458;
+      color: #ff8458;
     }
   }
 
   .li-Adrenaline {
     background-color: transparent;
-    border: 1px solid #58D1FF;
+    border: 1px solid #58d1ff;
 
     a {
-      color: #58D1FF;
+      color: #58d1ff;
     }
   }
 
   .li-Adventure {
     background-color: transparent;
-    border: 1px solid #AE67FF;
+    border: 1px solid #ae67ff;
 
     a {
-      color: #AE67FF;
+      color: #ae67ff;
     }
   }
 }
+
 .li-all {
   vertical-align: center;
   vertical-align: middle;
+
   .btn-all {
+    border-radius: 8px;
     font-size: 14px;
     font-family: Roboto;
     min-height: 48px;
     font-weight: bold;
     background-color: #663dff;
-    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    background-image: linear-gradient(
+      319deg,
+      #663dff 0%,
+      #aa00ff 37%,
+      #cc4499 100%
+    );
     color: #ffffff;
+
     &:hover {
       color: #ffffff;
     }
   }
-  a.btn-all{
+
+  a.btn-all {
     width: 80px;
     padding: 14px 0;
-    }
+  }
 }
 
 ul {
   margin-bottom: 0;
 }
 
-.section-games{
-  h3{
+.section-games {
+  h3 {
     margin-bottom: 15px;
     font-size: 18px;
   }
-  .games-header{
+
+  .games-header {
+    margin: 10px 0;
     font-family: 'pixellarimedium';
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(baseline);
-    .games-sort{
+
+    .games-sort {
       width: 30%;
+      @include media-breakpoint-down(md) {
+        width: 40%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 50%;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
       @include inline-flex();
       @include align-items(baseline);
       @include justify-content(flex-end);
-      h4{
+
+      h4 {
         font-size: 14px;
       }
-      select{
+
+      select {
         background-color: transparent;
         font-size: 12px;
         margin-left: 10px;
         width: 50%;
         border-radius: 8px;
+        @include media-breakpoint-down(lg) {
+          width: 60%;
+        }
+        @include media-breakpoint-down(md) {
+          width: 65%;
+        }
       }
     }
   }
 }
+
+/*.pagination{
+  background: rgba(0,0,0,0.05);
+  border-radius: 18px;
+  height: 36px;
+  line-height: 36px;
+  list-style: none;
+  margin: 0 5px;
+  padding: 0;
+
+  @include justify-content(center);
+  margin-bottom: 34px;
+  .page-link{
+    background-color: #D8D8D8 ;
+  }
+  .page-item:first-child{
+    .page-link{
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+  }
+  .page-item:last-child{
+    .page-link{
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+  }
+}*/
+

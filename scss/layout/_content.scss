@@ -7,10 +7,73 @@ Content
 @font-face {
   font-family: 'pixellarimedium';
   src: url('../../fonts/pixellari-webfont.woff2') format('woff2'),
-  url('../../fonts/pixellari-webfont.woff') format('woff');
+    url('../../fonts/pixellari-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-.wrapper{
-  background-color: #F1F1F1;
+.wrapper {
+  background-color: #f1f1f1;
+}
+
+.navigator {
+  text-align: center;
+  margin-bottom: 25px;
+  .head {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+  }
+  .arrow {
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: block;
+    height: 40px;
+    margin: 0;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+    width: 40px;
+    i {
+      color: #000000;
+    }
+    .disabled {
+      color: #d8d8d8;
+    }
+  }
+  ul {
+    @include flexbox();
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+
+    li {
+      color: #666;
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+      &.current {
+        background: #000000;
+        border-radius: 12px;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        span {
+          padding: 0 15px;
+        }
+      }
+      a {
+        transition: 0.3s;
+        color: #000000;
+        display: block;
+        padding: 0 15px;
+        text-decoration: none;
+      }
+    }
+  }
 }

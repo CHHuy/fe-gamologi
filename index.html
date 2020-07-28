@@ -127,6 +127,10 @@
     <div class="container">
       <nav class="navbar navbar-light navbar-expand-lg">
         <a class="navbar-brand" href="/"><img src="images/logo-g.png"> </a>
+        <ul class="switch-site">
+          <li><a class="selected" href="/">Games</a></li>
+          <li><a href="https://gamologi.com/">Site</a></li>
+        </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -141,17 +145,19 @@
               </button>
             </div>
           </div>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="CategoriesDropdown" role="button" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
                 Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="CategoriesDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">New Games</a>
+                <a class="dropdown-item" href="#">Most Popular</a>
+                <a class="dropdown-item" href="#">Best Games</a>
+                <a class="dropdown-item" href="#">Played Games</a>
+                <a class="dropdown-item" href="#">Favourite Games</a>
+                <a class="dropdown-item" href="#">Recommended Games</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -160,24 +166,37 @@
                 Genres
               </a>
               <div class="dropdown-menu" aria-labelledby="GenresDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Action & Adventure</a>
+                <a class="dropdown-item" href="#">For Girls</a>
+                <a class="dropdown-item" href="#">Strategy</a>
+                <a class="dropdown-item" href="#">Simulator</a>
+                <a class="dropdown-item" href="#">Management</a>
+                <a class="dropdown-item" href="#">Skill</a>
+                <a class="dropdown-item" href="#">RPG</a>
+                <a class="dropdown-item" href="#">Shooting</a>
+                <a class="dropdown-item" href="#">Fighting</a>
+                <a class="dropdown-item" href="#">Racing & Driving</a>
+                <a class="dropdown-item" href="#">Sports</a>
+                <a class="dropdown-item" href="#">Arcade & Retro</a>
+                <a class="dropdown-item" href="#">Metroidvania</a>
+                <a class="dropdown-item" href="#">Fun & Dumb</a>
               </div>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link" title="Tags">
+              <a href="allTags.html" class="nav-link" title="Tags">
                 Tags
               </a>
             </li>
+            <li class="nav-item">
+              <div class="login-group">
+                <button type="button" class="btn btn-login" data-toggle="modal" data-target="#LoginModal">
+                  Login
+                </button>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="login-group">
-          <button type="button" class="btn btn-login" data-toggle="modal" data-target="#LoginModal">
-            Login
-          </button>
-        </div>
+
       </nav>
     </div>
   </header>
@@ -379,7 +398,7 @@
               </a>
             </li>
             <li class="li-all">
-              <a href="#" class="btn btn-all">
+              <a href="allTags.html" class="btn btn-all">
                 All Tags
               </a>
             </li>
@@ -407,7 +426,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -420,7 +439,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/webgl.png" alt="">
+                <img class="card-source" src="images/webgl.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -433,7 +452,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -446,7 +465,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -459,7 +478,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -472,7 +491,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -485,7 +504,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -498,7 +517,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -511,7 +530,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -524,7 +543,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -537,7 +556,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -550,7 +569,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -563,7 +582,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -576,7 +595,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -589,7 +608,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -602,7 +621,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -615,7 +634,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -628,7 +647,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -641,7 +660,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -654,7 +673,7 @@
               <img class="card-img-top" src="images/game1.gif" alt="game1">
               <div class="card-body">
                 <h5 class="card-title">Join & Clash</h5>
-                <img class="card-source" src="images/html5.png" alt="">
+                <img class="card-source" src="images/html5.svg" alt="">
                 <div class="card-infos">
                   <span class="percentRating">90%</span>
                   <span class="playCount">600.000</span>
@@ -663,25 +682,20 @@
             </a>
           </div>
         </div>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="navigator">
+          <div class="head">
+            <a class="arrow previous" href="#"><i class="fas fa-arrow-left"></i></a>
+            <ul>
+              <li class="current"><span>1</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+            </ul>
+            <a class="arrow next" href="#"><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -700,7 +714,7 @@
         <div class="socialIcon footer-item col-12 col-lg-3">
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="icon-"></i></a>
           <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>

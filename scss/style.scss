@@ -25,6 +25,7 @@
 // =Third parties
 // --------------------------------------------------
 @import '../fonts/fontawesome/css/all.min.css';
+@import '../fonts/gamologi-v1.0/style.css';
 // =Partials
 // --------------------------------------------------
 @import 'partials/fonts';
@@ -46,3 +47,5 @@
 // =Pages
 // --------------------------------------------------
 @import 'pages/home';
+@import 'pages/allTags';
+@import 'pages/gamePlay';

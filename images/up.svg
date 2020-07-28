@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="GAME_CONTROLS" data-name="GAME CONTROLS" transform="translate(0 24) rotate(-90)">
+    <g id="Rectangle_Copy_4" data-name="Rectangle Copy 4" fill="#fff" stroke="#8d8d8d" stroke-miterlimit="10" stroke-width="0.8">
+      <rect width="24" height="24" rx="3" stroke="none"/>
+      <rect x="0.4" y="0.4" width="23.2" height="23.2" rx="2.6" fill="none"/>
+    </g>
+    <g id="ic-arrows-left" transform="translate(5.024 6)">
+      <path id="Path" d="M9.78.446l3.9,4.87a1,1,0,0,1,0,1.42l-3.9,4.87a1,1,0,0,1-1.56-1.24l2.7-3.3H1a1,1,0,0,1,0-2h9.92l-2.7-3.38A1,1,0,1,1,9.78.446Z" fill="#0e1317"/>
+    </g>
+  </g>
+</svg>

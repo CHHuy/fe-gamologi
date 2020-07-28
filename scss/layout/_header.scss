@@ -11,7 +11,8 @@ Header
     .navbar {
       background-color: #000000;
       padding: 1rem 0;
-      .navbar-toggler{
+
+      .navbar-toggler {
         background-color: #ffffff;
       }
     }
@@ -27,6 +28,9 @@ Header
     align-items: center;
     width: 230px;
     height: 45px;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
 
     input {
       color: #ffffff;
@@ -40,6 +44,7 @@ Header
         font-size: 20px;
       }
     }
+
     .btn-search {
       background-color: #1c1c1c;
       color: #ffffff;
@@ -48,9 +53,14 @@ Header
   }
 
   .navbar-nav {
+    @include media-breakpoint-up(lg) {
+      align-items: center;
+    }
     .nav-item {
       margin: 0 15px;
-
+      @include media-breakpoint-down(xs) {
+        margin: 10px 25px;
+      }
       .nav-link {
         color: #ffffff;
         font-size: 20px;
@@ -71,7 +81,8 @@ Header
           }
         }
       }
-
+    }
+    .nav-item:last-child {
     }
   }
 
@@ -79,5 +90,37 @@ Header
     background-color: #1c1c1c;
     color: #ffffff;
     font-size: 20px;
+  }
+}
+
+ul.switch-site {
+  font-size: 14px;
+  width: 66px;
+  height: 45px;
+  list-style: none;
+  background-color: #1c1c1c;
+  padding: 0 0;
+  margin: 0 20px;
+  border-radius: 8px;
+  text-align: center;
+
+  li {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      transition: all 0.1s ease-in-out;
+      &.selected {
+        border-radius: 8px;
+        background-color: #663dff;
+        background-image: linear-gradient(
+          319deg,
+          #663dff 0%,
+          #aa00ff 37%,
+          #cc4499 100%
+        );
+        padding: 2px 0 1px;
+      }
+    }
   }
 }
