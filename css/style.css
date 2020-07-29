@@ -11410,6 +11410,7 @@ ul {
 }
 
 .section-Tags .section-TagsList .tag-item {
+  text-decoration: none;
   font-family: Roboto;
   border: 1px solid #d8d8d8;
   border-radius: 8px;
@@ -11453,6 +11454,7 @@ ul {
   margin: 0 0;
   font-size: 12px;
   font-weight: 500;
+  color: #000000;
 }
 
 .section-Tags .section-TagsList .tag-item .tag-number {
