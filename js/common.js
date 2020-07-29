@@ -51,10 +51,22 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       event.preventDefault();
     });
   }
+  function pwd_check() {
+    $('.pwd_show').append('<span class="ptxt">Show</span>')
+    $(document).on('click', '.pwd_show .ptxt', function() {
 
+      $(this).text($(this).text() == 'Show' ? 'Hide' : 'Show')
+
+      $(this).prev().attr('type', function(index, attr) {
+        return attr == 'password' ? 'text' : 'password'
+      })
+
+    })
+  }
   function init() {
     scrollToAnchor();
     getBarwidth();
+    pwd_check();
   }
 
   $(document).ready(function () {

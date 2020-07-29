@@ -1,0 +1,95 @@
+.modal-report {
+  font-family: Roboto;
+
+  .modal-header {
+    border-bottom: 0;
+    @include flex-wrap(wrap);
+
+    .modal-title {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .modal-txt {
+      font-size: 14px;
+    }
+  }
+
+  .modal-body {
+    font-size: 14px;
+    font-weight: 500;
+    span{
+      color: red;
+    }
+  }
+
+  .modal-footer {
+    border-bottom: 0;
+  }
+  .submit-form{
+    .btn-submit{
+      background-color: #D60000;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  }
+}
+.modal-login{
+  font-family: Roboto;
+
+  .modal-header {
+    border-bottom: 0;
+    @include flex-wrap(wrap);
+    .modal-title {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .modal-txt {
+      font-size: 14px;
+    }
+  }
+
+  .modal-body {
+    font-size: 14px;
+    font-weight: 500;
+    span{
+      color: red;
+    }
+    .pwd_show {
+      position: relative;
+    }
+
+    .pwd_show .ptxt {
+      position: absolute;
+
+      top: 70%;
+
+      right: 25px;
+
+      z-index: 1;
+
+      color: $primary;
+
+      margin-top: -10px;
+
+      cursor: pointer;
+
+      transition: 0.3s ease all;
+    }
+    .pwd_show .ptxt:hover {
+      color: $secondary;
+    }
+  }
+
+  .modal-footer {
+    border-bottom: 0;
+  }
+  .submit-form{
+    .btn-submit{
+      background-color: #D60000;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  }
+}

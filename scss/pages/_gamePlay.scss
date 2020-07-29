@@ -1,22 +1,26 @@
 .section-gamePlay {
   margin-top: 30px;
+
   img {
     width: 100%;
   }
+
   .gameControls {
     background-color: #ecf5f1;
     height: 80px;
 
-    h5 {
+    .gameControlsTxt {
       margin-left: 30px;
       font-family: Roboto;
-      font-size: 10px;
       text-transform: uppercase;
       color: #8d8d8d;
       padding-top: 10px;
+      font-size: 10px;
+      font-weight: 700;
     }
 
     .controlsList {
+      margin-top: 5px;
       width: 50%;
       @include media-breakpoint-down(sm) {
         width: 100%;
@@ -43,9 +47,10 @@
   }
 
   .gameInform {
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       text-align: center;
     }
+    border-radius: 0 0 8px 8px;
     font-family: Roboto;
     min-height: 150px;
     background-color: #ffffff;
@@ -54,6 +59,7 @@
       margin: 0 15px;
       padding: 20px 0;
     }
+
     .Inform-Left {
       .game-title {
         font-size: 22px;
@@ -79,16 +85,19 @@
         }
       }
     }
+
     .Inform-Right {
-      @include media-breakpoint-up(lg){
+      @include media-breakpoint-up(lg) {
         text-align: right;
       }
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         margin-top: 30px;
         text-align: center;
       }
+
       .rating {
         margin-bottom: 5px;
+
         i {
           color: #37CB00;
 
@@ -102,12 +111,14 @@
           font-weight: 500;
         }
       }
-      .rating-txt{
+
+      .rating-txt {
         font-size: 14px;
         color: #8D8D8D;
         font-weight: 500;
         margin: 15px 0;
       }
+
       .btn-action-right {
         margin-top: 15px;
         font-weight: 500;
@@ -126,10 +137,362 @@
 
 .section-gamePlayFooter {
   margin: 20px 0;
-  .Footer-Body{
-    
-  }
-  .Footer-Aside{
+  @include flexbox();
 
+  .Footer-Body {
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
+    max-width: 720px;
+
+    .gameDetails {
+      font-family: Roboto;
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border-radius: 8px;
+
+      .gameDetailsHeader {
+        font-family: 'pixellarimedium';
+        text-transform: uppercase;
+        color: #000000;
+        padding-top: 10px;
+        font-size: 14px;
+      }
+
+      .gameDetailsTxt {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .gameDetailsFeature {
+        font-family: Roboto;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .gameDetailsUpTime {
+        margin-top: 20px;
+        font-size: 12px;
+        display: inline-block;
+
+        span {
+          color: #8D8D8D;
+        }
+
+        .DetailsUpTime {
+          font-weight: 700;
+          color: #000000;
+        }
+      }
+    }
+
+    .gameFbComment {
+      margin-top: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+
+      .facebook-comment {
+        padding: 20px 20px;
+      }
+    }
+  }
+
+  .gameRelate {
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    margin-top: 20px;
+
+    .gameRelateHeader {
+      font-family: 'pixellarimedium';
+      text-transform: uppercase;
+      color: #000000;
+      padding-top: 10px;
+      font-size: 14px;
+    }
+
+    .list-games {
+      @include justify-content(center);
+      margin-top: 15px;
+
+      .game-item {
+        margin: 0 15px 30px 15px;
+      }
+    }
+  }
+
+  .Footer-Aside {
+    width: 100%;
+    margin-left: 30px;
+    display: none;
+    @include media-breakpoint-up(xl) {
+      @include flexbox();
+      .content {
+        @include flex(1);
+      }
+      @include flex-direction(column);
+      .aside {
+        display: block;
+        margin-left: $grid-gutter-width;
+      }
+      .aside-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .asideWalkthrough {
+        .card-walkthrough {
+          border-radius: 8px;
+          border-color: transparent;
+          font-weight: 700;
+          font-family: Roboto;
+          @include align-items(center);
+          @include flex-direction(row);
+          padding: 10px 10px;
+
+          .card-img-box {
+            width: 110px;
+
+            .card-img {
+              padding: 5px 5px;
+            }
+          }
+
+          .card-body {
+            width: 150px;
+            padding: 0 5px;
+
+            .card-title {
+              margin-bottom: 5px;
+              font-size: 14px;
+            }
+
+            .card-text {
+              font-size: 12px;
+              color: #8d8d8d;
+            }
+          }
+        }
+      }
+      .asideTags {
+        background-color: #ffffff;
+        border-radius: 8px;
+
+        .asideTagsList {
+          padding: 15px 5px;
+
+          .tagsListHead {
+            @include flexbox();
+            @include justify-content(space-between);
+            text-transform: uppercase;
+            font-family: 'pixellarimedium';
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0 10px;
+
+            p {
+              margin-bottom: 5px;
+            }
+
+            a {
+              color: #FF2727;
+              text-decoration: none;
+            }
+          }
+
+          .aside-top-tags {
+            .list-tags {
+              @include flexbox();
+              list-style: none;
+              justify-content: center;
+              padding: 0 0;
+              margin-top: 0;
+              @include flex-wrap(wrap);
+
+              li {
+                transition: box-shadow 0.2s, transform 0.35s;
+                margin: 5px 5px 5px 5px;
+                border-radius: 8px;
+
+                a {
+                  font-family: Roboto;
+                  text-decoration: none;
+                  display: block;
+                  min-width: 88px;
+                  min-height: 40px;
+                  padding: 5px 14px;
+                  line-height: initial;
+
+                  .tag-name {
+                    font-size: 14px;
+                    font-weight: bold;
+                  }
+
+                  .tag-number {
+                    font-weight: 700;
+                    font-size: 10px;
+                  }
+                }
+              }
+
+              .li-ioGames {
+                background-color: transparent;
+                border: 1px solid #d8d8d8;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #8d8d8d;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-1Player {
+                background-color: transparent;
+                border: 1px solid #5abfb9;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #5abfb9;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-2Player {
+                background-color: transparent;
+                border: 1px solid #bf5aa3;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #bf5aa3;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-3Player {
+                background-color: transparent;
+                border: 1px solid #bf7a5a;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #bf7a5a;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-3D {
+                background-color: transparent;
+                border: 1px solid #5a63bf;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #5a63bf;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-Action {
+                background-color: transparent;
+                border: 1px solid #5abfb9;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #5abfb9;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-Addition {
+                background-color: transparent;
+                border: 1px solid #ff8458;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #ff8458;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-Adrenaline {
+                background-color: transparent;
+                border: 1px solid #58d1ff;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #58d1ff;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+
+              .li-Adventure {
+                background-color: transparent;
+                border: 1px solid #ae67ff;
+                box-shadow: 0 6px 8px 0 #DCDCDC;
+
+                a {
+                  color: #ae67ff;
+                }
+
+                &:hover {
+                  transform: translate(0, -2px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .asideSeries {
+        background-color: #ffffff;
+        border-radius: 8px;
+
+        .asidegameSeries {
+          padding: 10px 0;
+          .gameSeriesHead {
+            font-family: 'pixellarimedium';
+            padding: 5px 15px;
+            text-transform: uppercase;
+          }
+
+          .list-games {
+            @include justify-content(center);
+            border: 0;
+            margin-top: 10px;
+
+            .game-item {
+              margin: 0 10px 5px 10px;
+              width: 125px;
+              height: 150px;
+
+              a {
+                width: 125px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

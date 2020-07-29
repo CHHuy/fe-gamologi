@@ -58,6 +58,7 @@
   @include flex-wrap(wrap);
 
   li {
+    transition: box-shadow 0.2s,transform 0.35s;
     margin: 15px 5px 5px 5px;
     text-align: center;
     border-radius: 8px;
@@ -86,61 +87,130 @@
 
   .li-actionAdventure {
     background-color: #ffd758;
+    box-shadow: 0 8px 18px -8px #ffd758;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #ffd758;
+    }
   }
 
   .li-forGirls {
     background-color: #ff5887;
+    box-shadow: 0 8px 18px -8px #ff5887;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #ff5887;
+    }
   }
 
   .li-strategy {
     background-color: #ff8458;
+    box-shadow: 0 8px 18px -8px #ff8458;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #ff8458;
+    }
   }
 
   .li-simulator {
     background-color: #00c1d7;
+    box-shadow: 0 8px 18px -8px #00c1d7;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #00c1d7;
+    }
   }
 
   .li-management {
     background-color: #37cb00;
+    box-shadow: 0 8px 18px -8px #37cb00;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #37cb00;
+    }
   }
 
   .li-skill {
     background-color: #d48553;
+    box-shadow: 0 8px 18px -8px #d48553;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #d48553;
+    }
   }
 
   .li-RPG {
     background-color: #2e00d7;
+    box-shadow: 0 8px 18px -8px #2e00d7;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #2e00d7;
+    }
   }
 
   .li-shooting {
     background-color: #ad58ff;
+    box-shadow: 0 8px 18px -8px #ad58ff;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #ad58ff;
+    }
   }
 
   .li-fighting {
     background-color: #d20000;
+    box-shadow: 0 8px 18px -8px #d20000;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #d20000;
+    }
   }
 
   .li-racingDriving {
     background-color: #b3ff58;
+    box-shadow: 0 8px 18px -8px #b3ff58;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #b3ff58;
+    }
   }
 
   .li-sports {
     background-color: #c4c4c4c4;
+    box-shadow: 0 8px 18px -8px #c4c4c4c4;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #c4c4c4c4;
+    }
   }
 
   .li-arcadeRetro {
     background-color: #181818;
+    box-shadow: 0 8px 18px -8px #181818;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #181818;
+    }
   }
 
   .li-metroidvania {
     background-color: #ffd758;
+    box-shadow: 0 8px 18px -8px #ffd758;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #ffd758;
+    }
   }
 
   .li-funDumb {
     background-color: #00c1d7;
+    box-shadow: 0 8px 18px -8px #00c1d7;
+    &:hover{
+      transform: translate(0, -2px);
+      box-shadow: 0 12px 18px -8px #00c1d7;
+    }
   }
 }
-
 .list-tags {
   @include flexbox();
   list-style: none;
@@ -150,6 +220,7 @@
   @include flex-wrap(wrap);
 
   li {
+    transition: box-shadow 0.2s,transform 0.35s;
     margin: 5px 5px 20px 5px;
     border-radius: 8px;
 
@@ -177,81 +248,108 @@
   .li-ioGames {
     background-color: transparent;
     border: 1px solid #d8d8d8;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #8d8d8d;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-1Player {
     background-color: transparent;
     border: 1px solid #5abfb9;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #5abfb9;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-2Player {
     background-color: transparent;
     border: 1px solid #bf5aa3;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #bf5aa3;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-3Player {
     background-color: transparent;
     border: 1px solid #bf7a5a;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #bf7a5a;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-3D {
     background-color: transparent;
     border: 1px solid #5a63bf;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #5a63bf;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-Action {
     background-color: transparent;
     border: 1px solid #5abfb9;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #5abfb9;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-Addition {
     background-color: transparent;
     border: 1px solid #ff8458;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #ff8458;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-Adrenaline {
     background-color: transparent;
     border: 1px solid #58d1ff;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #58d1ff;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 
   .li-Adventure {
     background-color: transparent;
     border: 1px solid #ae67ff;
-
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     a {
       color: #ae67ff;
+    }
+    &:hover{
+      transform: translate(0, -2px);
     }
   }
 }
@@ -261,22 +359,17 @@
   vertical-align: middle;
 
   .btn-all {
+    box-shadow: 0 6px 8px 0 #DCDCDC;
     border-radius: 8px;
     font-size: 14px;
     font-family: Roboto;
     min-height: 48px;
     font-weight: bold;
-    background-color: #663dff;
-    background-image: linear-gradient(
-      319deg,
-      #663dff 0%,
-      #aa00ff 37%,
-      #cc4499 100%
-    );
-    color: #ffffff;
-
+    background-color: #EDEDED;
+    color: #000000;
+    transition: box-shadow 0.2s,transform 0.35s;
     &:hover {
-      color: #ffffff;
+      transform: translate(0, -2px);
     }
   }
 
